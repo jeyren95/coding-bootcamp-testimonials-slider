@@ -1,0 +1,93 @@
+body {
+  font-family: "Inter", sans-serif;
+}
+
+/*** Containers ***/
+.container-fluid {
+  padding: 5% 15% 0;
+}
+
+/*** Quote and name column ***/
+.person-quote .quotation-marks {
+    position: relative;
+    top: 25%;
+    left: 40%;
+}
+
+.person-quote .testimonial {
+  margin-top: 20%;
+  margin-bottom: 5%;
+  font-size: 32px;
+  z-index: 2;
+  position: relative;
+  left: 25%;
+}
+
+.info {
+  font-size: 18px;
+  position: relative;
+  left: 25%
+}
+
+.info .name {
+  font-weight: bold;
+  color: #202046;
+}
+
+.info .role {
+  color: #babacf;
+}
+
+@media (max-width: 480px) {
+  .person-quote .testimonial {
+    font-size: 20px;
+    text-align: center;
+    left: 0;
+  }
+  .info {
+    font-size: 16px;
+    text-align: center;
+    left: 0;
+  }
+}
+
+/*** Photo ***/
+.person .person-photo {
+  position: absolute;
+  z-index: 1;
+  top: 9%;
+  left: 12%;
+}
+
+.person .person-photo img {
+  border-radius: 5px;
+  width: 100%;
+  height: auto;
+}
+
+.person .prev-next-icons {
+  position: absolute;
+  z-index: 2;
+  bottom: 5%;
+  left: 20%;
+  background-color: white;
+  padding: 2% 3%;
+  width: 15%;
+  border-radius: 30px;
+}
+
+.person .prev-next-icons .prev-icon {
+  float:left;
+}
+.person .prev-next-icons .next-icon {
+  float: right;
+}
+
+@media (max-width: 480px) {
+  .person .prev-next-icons {
+    bottom: 43%;
+    left: 43%;
+    width: 25%;
+    padding: 5% 3%;
+  }
+}
